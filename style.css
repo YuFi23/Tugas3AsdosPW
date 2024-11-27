@@ -1,0 +1,98 @@
+/* Umum untuk seluruh halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+/* Styling untuk login-box */
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -50%);
+    background: #34495e;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 15px;
+}
+
+/* Gaya untuk judul dan informasi profil */
+.login-box p {
+    color: #ecf0f1;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Gaya untuk tautan */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 14px;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Gaya hover dan aktif pada tautan */
+a:focus, a:hover {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+
+/* Gaya untuk form login dan elemen lainnya */
+.login-box p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Membuat tombol lebih menarik */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-box p {
+        font-size: 14px;
+    }
+
+    .login-box p:first-child {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+}
